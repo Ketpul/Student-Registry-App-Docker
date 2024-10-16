@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run npm audit tests') {
             steps {
-                bat 'npm test'
+                bat 'npm audit'
             }
         }
         stage('Execute tests') {
